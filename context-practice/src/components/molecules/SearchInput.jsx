@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 import { PrimaryButton } from "../atoms/button/PrimaryButton";
 import { Input } from "../atoms/input/Input";
+import { memo } from "react";
 
-export const SearchInput = () => {
+export const SearchInput = memo(() => {
   return (
     <div>
       <SButtonWrapeer>
@@ -12,7 +13,7 @@ export const SearchInput = () => {
       </SButtonWrapeer>
     </div>
   );
-};
+});
 
 const SButtonWrapeer = styled.div`
   display: grid;
